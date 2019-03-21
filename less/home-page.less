@@ -12,11 +12,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -66,13 +75,6 @@
   }
 
   .btn {
-    width: 85%;
-    border: 1px solid @button-bg;
-    border-radius: 10px;
-    color: @main-bg;
-    background: @button-bg;
-    font-size: 2rem;
-    padding: 10px;
-    text-align: center;
+   .buttons;
   }
 }// home

@@ -2,8 +2,20 @@
 header {
     .mainHeader;
 
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
     nav {
-        .navBar;  
+        .navBar; 
+
+        @media @mobile {
+            margin-top: 15px;
+            width: 100%;
+        }
+        
     }
 
     a {
